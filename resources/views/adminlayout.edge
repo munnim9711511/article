@@ -1,0 +1,43 @@
+<html ng-app="adminMain">
+<head >
+
+<title>
+@!section('title')
+
+</title>
+{{script("/js/min/dropzone.min.js")}}
+{{script("/js/app.js")}}
+{{script("/js/materialize.min.js")}}
+{{script("/js/angular.min.js")}}
+{{script("/js/angular-route.min.js")}}
+{{script("/js/script.js")}}
+{{script("/js/fronthEnd/admin_module/adminMain.js")}}
+{{script("/js/fronthEnd/admin_articl_manage_Module/adminArticleManageModel.js")}}
+{{script("/js/fronthEnd/new_Aticle_Model/newArticleCtl.js")}}
+{{script("/js/fronthEnd/service_modules/service_http.js")}}
+{{script("/js/fronthEnd/editarticles_Module/edit_article.js")}}
+{{script("/js/fronthEnd/new_Aticle_Model/newArticleCtl.js")}}
+{{script("/js/fronthEnd/request_Module/requestCtl.js")}}
+{{script("/js/fronthEnd/editor_module/editorCtl.js")}}
+
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+{{css("/css/materialize.min.css")}}
+<!-- {{css("/js/min/basic.min.css")}} -->
+{{css("/js/min/dropzone.min.css")}}
+
+</head>
+<body class="#212121 grey darken-4">
+  <!-- <script type="text/javascript">
+  $(document).ready(function() {
+$('select').material_select();
+});
+
+  </script> -->
+@!section('body')
+
+</body>
+</html>

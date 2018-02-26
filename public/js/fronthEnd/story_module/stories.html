@@ -1,0 +1,28 @@
+<div class="" ng-controller = "storiesCTL">
+  <h2>Stories</h2>
+  <hr>
+<br><br>
+  <div class="row">
+    <div class="co m6">
+      <table class="bordered">
+        <thead>
+          <tr >
+              <th>Article Discription</th>
+              <th>Article</th>
+
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr ng-repeat="x in storiesdata">
+            <td>{{x.doc_information}}</td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

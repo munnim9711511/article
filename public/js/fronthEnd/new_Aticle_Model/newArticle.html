@@ -1,0 +1,49 @@
+<div  ng-controller="articleCTL">
+  <script>
+  $(function(){
+       $('select').material_select();
+
+  });
+  </script>
+<form class=""
+action="/post-article-data" method="post" enctype="multipart/form-data">
+  {{ csrfField() }}
+<div class="row">
+  <div class="input-field col s6">
+    <select name="docTitle">
+       <option value="" disabled selected>Article Type</option>
+       <option value="Sports" data-icon="/image/cms sports icon.png" class="left circle">Sports</option>
+       <option value="Religion" data-icon="/image/mosque-512.png" class="left circle">Religion</option>
+       <option value="Recipie" data-icon="/image/images.jpeg" class="left circle">Recipie</option>
+       <option value="Stories" data-icon="/image/parents_books_300.original.png" class="left circle">Stories</option>
+     </select>
+     <label>Materialize Select</label>
+
+  </div>
+
+</div>
+<div class="row">
+    <div class="input-field col s6">
+      <textarea id="textarea1" class="materialize-textarea" name="testinfo"></textarea>
+      <label for="textarea1">Document Discription</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="file-field input-field col s6">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" name="doc" />
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+  </div>
+
+  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+
+</form>
+
+</div>

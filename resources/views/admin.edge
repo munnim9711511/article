@@ -1,0 +1,40 @@
+@layout('adminlayout')
+
+@section('body')
+
+<nav class="#616161 grey darken-2 z-depth-5">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Admin Panel</a>
+
+  </div>
+</nav>
+<ul id="slide-out" class="side-nav">
+  <li><div class="user-view">
+    <div class="background #9fa8da indigo lighten-3">
+
+    </div>
+
+  </div></li>
+
+  <li><h4>Menu</h4></li>
+  <li><div class="divider"></div></li>
+
+  <li><a class="subheader">Doc Managment</a></li>
+  <li><a class="waves-effect" href="#!/editor-note">Editors Note</a></li>
+    <li><a class="waves-effect" href="#!/publish-article">Add New Article</a></li>
+      <li><a class="waves-effect" href="#!/edit-article">Edit articles</a></li>
+        <li><a class="waves-effect" href="#!/request-articles-published">Request</a></li>
+
+  <li><a class="waves-effect modal-trigger" href="/logout">LOGOUT</a></li>
+</ul>
+<br>
+
+
+&nbsp;&nbsp;&nbsp;<a class="  button-collapse btn-floating btn-large waves-effect waves-light red" data-activates="slide-out"><i class="material-icons">apps</i></a>
+<div class="row">
+<div class="container">
+<div class="col m9">
+<ng-view></ng-view>
+</div>
+</div>
+@endsection

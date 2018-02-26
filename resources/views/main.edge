@@ -1,0 +1,92 @@
+@layout('layout')
+@section('title')
+main
+@endsection
+
+@section('body')
+
+
+
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+<form>
+<div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="icon_prefix" type="text" class="validate">
+        <label for="icon_prefix">Documnet title</label>
+      </div>
+</div>
+<div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="icon_prefix" type="text" class="validate">
+        <label for="icon_prefix">catergary</label>
+      </div>
+</div>
+<div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="icon_prefix" type="text" class="validate">
+        <label for="icon_prefix">from</label>
+      </div>
+</div>
+<div class="row">
+
+<div class="file-field input-field col s6">
+      <div class="btn">
+        <span>File</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+</div>
+
+</form>
+</div>
+
+
+<nav class="#616161 grey darken-2 z-depth-5">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Articles</a>
+
+  </div>
+</nav>
+<br>
+
+<ul id="slide-out" class="side-nav">
+  <li><div class="user-view">
+    <div class="background #9fa8da indigo lighten-3">
+
+    </div>
+
+  </div></li>
+
+  <li><h4>Menu</h4></li>
+  <li><div class="divider"></div></li>
+  <li><a class="subheader">Doc Managment</a></li>
+
+    <li><a class="waves-effect" href="#!/sports">Sports</a></li>
+      <li><a class="waves-effect" href="#!/religion">Religion</a></li>
+        <li><a class="waves-effect" href="#!/recipie">Recipie</a></li>
+  <li><a class="waves-effect" href="#!/stories">stories</a></li>
+  <li><a class="waves-effect modal-trigger" href="#modal1">submit doc for publish</a></li>
+</ul>
+
+	&nbsp;&nbsp;<a class="  button-collapse btn-floating btn-large waves-effect waves-light red" data-activates="slide-out"><i class="material-icons">apps</i></a>
+
+<div class="row">
+<div class="container">
+<div class="col m9">
+<ng-view></ng-view>
+</div>
+</div>
+
+
+</div>
+
+
+@endsection

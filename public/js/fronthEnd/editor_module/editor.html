@@ -1,0 +1,36 @@
+<div class="row" ng-controller="editorCTL">
+  <div class="row">
+    <div class="col m7">
+      <div class="progress" ng-hide="hide">
+     <div class="indeterminate"></div>
+ </div>
+        <h4><em>Editors Note</em></h4>
+      <!-- <form class="" action="" method="post"> -->
+
+        <div class="row">
+          <div class="input-field col s12">
+           <textarea id="textarea1" class="materialize-textarea" ng-model = "editorsData"></textarea>
+           <label for="textarea1">Editors text</label>
+         </div>
+
+        </div>
+        <div class="row">
+          <button class="waves-effect waves-light btn"  name="action" ng-click = "publishEditorsNote()">Submit
+
+            </button>
+            <button class="waves-effect waves-red btn"  name="action">Clear text
+
+              </button>
+
+        </div>
+
+      <!-- </form> -->
+
+    </div>
+
+  </div>
+
+
+
+
+</div>

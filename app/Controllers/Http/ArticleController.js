@@ -3,6 +3,7 @@
 const User = use('App/Models/User');
 const EditorsNote = use('App/Models/EditorsNote');
 const ArticlesDocInfor = use('App/Models/ArticlesDocInfor');
+const EditorArticleNote = use('App/Models/EdiTorNote');
 const Helpers = use('Helpers')
 
 const Hash = use('Hash');
@@ -75,7 +76,7 @@ return await
 
         })
 
-        await doc.move(Helpers.tmpPath('uploads'), {
+        await doc.move(Helpers.publicPath('uploads'), {
 
         })
 
@@ -90,8 +91,14 @@ return await
   }
   async editorsNote({request}){
 
-    return await request.input('note');
+    const editorData =new EditorArticleNote();
+    editorData.editors_note = request.input("note");
+    editorData.save();
+    return "Data have been saved";
 
+  }
+  async getAllArticleData({request}){
+    return  await ArticlesDocInfor.all();
   }
 
 }

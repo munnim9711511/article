@@ -18,7 +18,9 @@ $scope.hide = false;
     }).then(function(res){
       $timeout(function () {
             $scope.hide = true;
-             Materialize.toast('Data Saved!', 2000)
+             Materialize.toast(res.data, 2000);
+             $scope.editorsData = "";
+
           }, 2000);
     },function(erro){
 

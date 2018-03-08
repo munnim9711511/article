@@ -24,6 +24,7 @@ Route.get('/get-sports-data','ArticleController.getSportsData');
 Route.get('/get-rligion-data','ArticleController.getReligionData');
 Route.get('/recipe-data','ArticleController.recipeData');
 Route.get('/get-stories-data','ArticleController.storiesData');
+Route.get('/get-all-article','ArticleController.getAllArticleData');
 
 
 Route.post('/test-log','ArticleController.testLog');
